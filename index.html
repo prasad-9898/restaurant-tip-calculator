@@ -1,0 +1,107 @@
+<html>
+
+<head>
+
+    <title></title </head>
+    <style>
+        main {
+            height: 100vh;
+            background: ;
+            background: linear-gradient(#e66465, #9198e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        div {
+            max-width: 500px;
+            height: auto;
+            background-color: burlywood;
+            padding: 50px;
+            box-shadow: 1px 1px 15px 3px antiquewhite;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            text-shadow: 1px 2px 1px white;
+            text-transform: capitalize;
+        }
+
+        lable {
+            display: block;
+            text-transform: capitalize;
+            margin-top: 30px;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px 0;
+
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: none;
+            color: white;
+            background: #00b894;
+            box-shadow: 1px 1px 5px 1px #2d3436;
+            margin-top: 20px;
+
+        }
+
+    </style>
+
+<body>
+    <main>
+        <div>
+            <h1>tip calculater</h1>
+            <label>Bill amount</label>
+            <input type="text" name="" id="bill_amount">
+            <br>
+            <label>tip perc</label>
+            <input type="text" name="" id="tip_perc">
+            <br>
+            <label>tip amount</label>
+            <input type="text" name="" id="tip_total" disabled>
+            <br>
+            <label>total billed </label>
+            <input type="text" name="" id="total_billed" disabled>
+            <br>
+
+            <button onclick="tipcalcy()">calculate</button>
+        </div>
+
+    </main>
+    <script>
+        const tipcalcy = () => {
+                let amount = document.getElementById('Bill_amount').Value;
+
+                let perc = document.getElementById('tip_perx').value;
+
+                let tip = amount * (perc / 100);
+                alert(tip);
+
+                let total = tip + amount;
+                alert(total);
+
+                document.getElementById(tip_total ').value = tip;
+                    document.getElementById('total_Billed').value = total;
+
+
+                }
+
+    </script>
+
+
+</body>
+
+
+
+
+
+</html>
